@@ -21,12 +21,16 @@ const StyledInput = styled.input`
   background-color: #f5f8fa;
   border-radius: 0px;
 `;
-
-const AuthInput = () => {
+// 傳入Input的props
+const AuthInput = ({ type, label, value, placeholder, onChange }) => {
   return (
     <StyledContainer>
-      <StyledLabel>label</StyledLabel>
-      <StyledInput type="text" placeholder="placeholder" />
+      <StyledLabel>{label}</StyledLabel>
+      <StyledInput
+        type={type || 'text'}
+        placeholder={placeholder || ''}
+        onChange={(event) => onChange?.(event.target.value)}
+      />
     </StyledContainer>
   );
 };
