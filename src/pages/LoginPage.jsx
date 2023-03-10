@@ -7,12 +7,14 @@ import {
 import { ACLogoIcon } from 'assets/images';
 import { AuthInput } from 'components';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from 'api/auth';
+import Swal from 'sweetalert2';
 const LoginPage = () => {
   //建立useState 帳號與密碼的初始狀態
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
   const handleClick = async () => {
     if (username.length === 0) {
       return;
@@ -23,7 +25,23 @@ const LoginPage = () => {
     const { success, authToken } = await login({ username, password });
     if (success) {
       localStorage.setItem('authToken', authToken);
+      Swal.fire({
+        position: 'top',
+        title: '登入成功!',
+        timer: 1000,
+        icon: 'success',
+        showCancelButton: false,
+      });
+      navigate('/todos')
+      return;
     }
+    Swal.fire({
+      position: 'top',
+      title: '登入失敗！',
+      timer: 1000,
+      icon: 'error',
+      showConfirmButton: false,
+    });
   };
   return (
     <AuthContainer>
