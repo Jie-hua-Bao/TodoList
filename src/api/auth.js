@@ -43,3 +43,19 @@ export const register = async ({ username, email, password }) => {
     console.error('[Register Failed]: ', error);
   }
 };
+
+// 建立身分驗證function checkPermission
+
+export const checkPermission = async (authToken) => {
+  try {
+    const response = await axios.get(`${authURL}/test-token`, {
+      //後端api的規範，Bearer前面要有一個空白
+      headers: {
+        Authorization: 'Bearer ' + authToken,
+      },
+    });
+    return response.data.success;
+  } catch (error) {
+    console.error('[Check Permission Failed]', error);
+  }
+};

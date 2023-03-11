@@ -6,9 +6,9 @@ import {
 } from 'components/common/auth.styled';
 import { ACLogoIcon } from 'assets/images';
 import { AuthInput } from 'components';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { login } from 'api/auth';
+import { checkPermission, login } from 'api/auth';
 import Swal from 'sweetalert2';
 const LoginPage = () => {
   //建立useState 帳號與密碼的初始狀態
@@ -32,7 +32,7 @@ const LoginPage = () => {
         icon: 'success',
         showCancelButton: false,
       });
-      navigate('/todos')
+      navigate('/todos');
       return;
     }
     Swal.fire({
@@ -43,6 +43,19 @@ const LoginPage = () => {
       showConfirmButton: false,
     });
   };
+  useEffect(() => {
+    const checkTokenIsValid = async () => {
+      const authToken = localStorage.getItem('authToken');
+      if (!authToken) {
+        return;
+      }
+      const result = await checkPermission(authToken);
+      if (result) {
+        navigate('/todos');
+      }
+    };
+    checkTokenIsValid();
+  }, [navigate]);
   return (
     <AuthContainer>
       <div>
