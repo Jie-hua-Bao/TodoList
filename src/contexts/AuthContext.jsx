@@ -7,7 +7,7 @@ const defaultAuthContext = {
   currentMember: null, // 當前使用者相關資料，預設為 null，成功登入後就會有使用者資料
   register: null, // 註冊方法
   login: null, // 登入方法
-  logout: null, // 登入方法
+  logout: null, // 登出方法
 };
 
 const AuthContext = createContext(defaultAuthContext);
