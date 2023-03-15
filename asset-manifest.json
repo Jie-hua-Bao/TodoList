@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/TodoList/static/css/main.4097c508.chunk.css",
-    "main.js": "/TodoList/static/js/main.9ffce6b6.chunk.js",
-    "main.js.map": "/TodoList/static/js/main.9ffce6b6.chunk.js.map",
+    "main.css": "/TodoList/static/css/main.81e9703d.chunk.css",
+    "main.js": "/TodoList/static/js/main.68001140.chunk.js",
+    "main.js.map": "/TodoList/static/js/main.68001140.chunk.js.map",
     "runtime-main.js": "/TodoList/static/js/runtime-main.c7efbbd3.js",
     "runtime-main.js.map": "/TodoList/static/js/runtime-main.c7efbbd3.js.map",
-    "static/js/2.b2b3e6ad.chunk.js": "/TodoList/static/js/2.b2b3e6ad.chunk.js",
-    "static/js/2.b2b3e6ad.chunk.js.map": "/TodoList/static/js/2.b2b3e6ad.chunk.js.map",
+    "static/js/2.8c64a59d.chunk.js": "/TodoList/static/js/2.8c64a59d.chunk.js",
+    "static/js/2.8c64a59d.chunk.js.map": "/TodoList/static/js/2.8c64a59d.chunk.js.map",
     "static/js/3.3095a65e.chunk.js": "/TodoList/static/js/3.3095a65e.chunk.js",
     "static/js/3.3095a65e.chunk.js.map": "/TodoList/static/js/3.3095a65e.chunk.js.map",
     "index.html": "/TodoList/index.html",
-    "static/css/main.4097c508.chunk.css.map": "/TodoList/static/css/main.4097c508.chunk.css.map",
-    "static/js/2.b2b3e6ad.chunk.js.LICENSE.txt": "/TodoList/static/js/2.b2b3e6ad.chunk.js.LICENSE.txt",
-    "static/media/ac-logo.eea79863.svg": "/TodoList/static/media/ac-logo.eea79863.svg",
-    "static/media/check-active.680985db.svg": "/TodoList/static/media/check-active.680985db.svg",
-    "static/media/check-circle.ad8591fd.svg": "/TodoList/static/media/check-circle.ad8591fd.svg",
-    "static/media/check-hover.f1b1bcfd.svg": "/TodoList/static/media/check-hover.f1b1bcfd.svg"
+    "static/css/main.81e9703d.chunk.css.map": "/TodoList/static/css/main.81e9703d.chunk.css.map",
+    "static/js/2.8c64a59d.chunk.js.LICENSE.txt": "/TodoList/static/js/2.8c64a59d.chunk.js.LICENSE.txt",
+    "static/media/ac-logo.f4e0f3cb.svg": "/TodoList/static/media/ac-logo.f4e0f3cb.svg",
+    "static/media/check-active.95ca055c.svg": "/TodoList/static/media/check-active.95ca055c.svg",
+    "static/media/check-circle.30720b46.svg": "/TodoList/static/media/check-circle.30720b46.svg",
+    "static/media/check-hover.5e00062b.svg": "/TodoList/static/media/check-hover.5e00062b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c7efbbd3.js",
-    "static/js/2.b2b3e6ad.chunk.js",
-    "static/css/main.4097c508.chunk.css",
-    "static/js/main.9ffce6b6.chunk.js"
+    "static/js/2.8c64a59d.chunk.js",
+    "static/css/main.81e9703d.chunk.css",
+    "static/js/main.68001140.chunk.js"
   ]
 }
